@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>5th_assignment</title>
+        <!-- Bootstrap CSS -->
+        <!-- <script src="app2.js"></script>    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: large;
+            padding: 100px;
+        }
+    </style>
+  </head>
+  <body style="background-image: url(images/banner3.jpg);">
+    <h4>Assignment 17-20</h4>
+    <script>
+                   document.write("1)");
+                   document.write("<br>");
+ 
+        var arrr1=[
+            ["a","b","c"],
+            ["x","y","z"]
+        ];
+        for(var i=0; i<arrr1.length; i++){
+
+            document.write(arrr1[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("2)");
+        document.write("<br>");
+        var arr2=[
+            [0,1,2,3],
+            [1,0,1,2],
+            [2,1,0,1]
+        ];
+        for(var i=0; i<arr2.length; i++){
+
+            document.write(arr2[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("3)");
+        document.write("<br>");
+        for(var a=1; a<=10; a++){
+            document.write(a);
+            document.write("<br>");
+      
+        }
+        document.write("<br>");
+        document.write("4)");
+        document.write("<br>");
+        var num=prompt("Enter The Table Number");
+        var limit=prompt("Enter the Limit");
+        document.write("Multiplication table of "+num);
+        document.write("<br>");
+        document.write("length "+limit);
+        document.write("<br>");
+        for(var i=1; i<=limit; i++){
+            document.write(num+"x"+i+"="+num*i);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("5)");
+        document.write("<br>");
+        var arry=["apple", "banana", "mango", "orange", "strawberry"];
+        for(var i=0; i<arry.length; i++){
+            document.write("Element at index "+ i+"  is " + arry[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("6) ");
+        document.write("<br>");
+        // document.write("a)");
+        document.write("<h5>Counting:</h5>");
+        for(var b=1; b<=10; b++){
+            document.write(b+"  ");
+            // document.write("<br>");
+      
+        }
+       
+        document.write("<br>");
+        document.write("<h5>Reverse Counting:</h5>");
+        for(var b=10; b>=1; b--){
+            document.write(b+"  ");
+            // document.write("<br>");
+      
+        }
+        document.write("<br>");
+        document.write("<h5>Even</h5>");
+        for (var x=0; x<=20; x++) {
+        if (x % 2 === 0) {
+                document.write(x + " ");   
+        }
+}
+document.write("<br>");
+        document.write("<h5>Odd</h5>");
+        for (var x=0; x<=20; x++) {
+        if (x % 2 !== 0) {
+                document.write(x + " ");   
+        }
+}
+document.write("<br>");
+        document.write("<h5>Series</h5>");
+        for (var x=2; x<=20; x++) {
+        if (x % 2 === 0) {
+                document.write(x + "k ");   
+        }
+}
+
+document.write("<br>");
+ 
+document.write("7)");
+document.write("<br>"); 
+var bakery=["cake", "apple pie", "cookie", "chips", "patties"];
+var order=prompt("Welcome ..! What do you want to order?");
+for(var i=0; i<=bakery.length; i++){
+if(order==bakery[i]){
+        document.write(bakery[i]+" available at index "+i+ " in our bakery");
+        break;
+    }
+    else if(order!=bakery[i]){
+        document.write("We are Sorry "+ order+" not available in our bakery.");
+        break;
+    }
+
+}
+document.write("<br>");
+document.write("8)");
+document.write("<br>");
+document.write("Array:");
+var num_check=[24, 53, 78, 91, 12];
+for(var a=0; a<num_check.length; a++){
+    document.write("  "+num_check[a]);
+}
+for(i = 1;i < num_check.length; ++i)
+    {
+       if(num_check[0] < num_check[i])
+           num_check[0] = num_check[i];
+    }
+    document.write("<br>");
+    document.write("Largest element = "+ num_check[0]);
+
+    document.write("<br>");
+document.write("9)");
+document.write("<br>");
+document.write("Array:");
+var num_check=[24, 53, 78, 91, 12];
+for(var a=0; a<num_check.length; a++){
+    document.write("  "+num_check[a]);
+}
+for(i = 1;i < num_check.length; ++i)
+    {
+       if(num_check[0] > num_check[i])
+           num_check[0] = num_check[i];
+    }
+    document.write("<br>");
+    document.write("Smallest element = "+ num_check[0]);
+
+ 
+
+
+    </script>
+    
+  </body>
+</html>

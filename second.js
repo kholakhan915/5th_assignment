@@ -1,0 +1,3 @@
+<srcipt>
+    alert("hy");
+</srcipt>

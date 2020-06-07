@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>6th_assignment</title>
+        <!-- Bootstrap CSS -->
+        <script src="app6.js"></script>   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <style>
+    body{
+      font-family: fantasy;
+      font-size: large;
+      padding: 100px;
+  }
+  </style>
+  </head>
+  <body background="images/banner3.jpg">
+      <h4>6th_assignment</h4>
+      <script>
+        var a=10;
+        document.write("The Value of a is:"+a);
+        document.write("<br>");
+        ++a;
+        document.write("The Value of ++a is:"+a);
+        document.write("<br>");
+        document.write("Now The Value Of a is:"+a);
+        document.write("<br>");
+        document.write("The Value of a++ is:"+a);
+        a++;
+        document.write("<br>");
+        document.write("NowThe Value of a is:"+a);
+        --a;
+        document.write("<br>");
+        document.write("The Value of --a is:"+a);
+        document.write("<br>");
+        document.write("Now The Value of --a is:"+a);
+        document.write("<br>");
+        document.write("The Value Of a-- is :" + a);
+       a--;
+       document.write("<br>");
+       document.write("Now The Value Of a-- is :"+a);
+       document.write("<br>");
+       document.write("2)");
+       document.write("<br>");
+        var x=2;
+        var y=1;
+        var result= --x - --y + ++y + y--; 
+        document.write("a:" +x);
+        
+        document.write("<br>");
+        document.write("b :"+y);
+        document.write("<br>");
+        // let result=--a;
+        document.write("Result  :"+result);
+        document.write("<br>");
+        // let result=
+        document.write("3)");
+        var name_user=prompt("What is your name?");
+        alert("Welcome "+name_user);
+        document.write("<br>");
+        document.write("4)");
+        document.write("<br>");
+        var number=prompt("Enter the Number");
+        // document.write(number);
+        // var number=4;
+        if(number){
+          
+          for(var i=1; i<=10; i++){
+          document.write(number+"*"+i+"="+number*i);
+      document.write(" <br>");
+      }
+        }
+        else{
+          for(var i=1; i<=10; i++){
+          document.write(5+"*"+i+"="+5*i);
+      document.write(" <br>");
+      }
+        }
+        document.write("<br>");
+        document.write("5)"); 
+        document.write("<br>");
+        var obt=0;
+        var t_marks=0;
+        document.write("<table border='2'> <tr><th>Subject</th><th>Total</th><th>Obtain Marks</th><th>Percentage</th></tr>");
+        //  document.write("<br>");
+        for(var i=1; i<=3; i++){
+          var subject=prompt("Enter the Subject Name?");
+          var sub1_marks=parseInt(prompt("Enter the Subject marks"));
+          var total_marks=100;
+          // document.write(" <tr><td>"+ subject+"</td><th>"+sub1_marks+"</th><td>"+ total_marks+"</td><th>"+percent+"</th></tr>");
+          document.write(subject);
+          document.write("<br>");
+          document.write(sub1_marks);
+          document.write("<br>");
+          document.write(total_marks);
+          document.write("<br>");
+          obt+=sub1_marks;
+          t_marks+=total_marks;
+         
+        //  document.write("</table>");
+         
+           
+        }
+        
+         document.write("<br>");
+document.write("Total Marks"+t_marks);
+document.write("<br>");
+         
+document.write("Obtain Marks"+obt);
+document.write("<br>");
+document.write("percentage"+obt/total_marks*100);
+          
+        
+        
+        
+        
+</script>
+  </body>
+</html>

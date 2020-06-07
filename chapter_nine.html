@@ -1,0 +1,260 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>5th_assignment</title>
+        <!-- Bootstrap CSS -->
+        <!-- <script src="app2.js"></script>    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: large;
+            padding: 100px;
+        }
+    </style>
+  </head>
+  <body style="background-image: url(images/banner3.jpg);">
+    <h3>Assignment 14-16</h3>
+<script>
+ var std_name=[];
+ var std_name="khola khan";
+//  console.log(std_name);
+document.write(std_name);
+document.write("<br>");
+document.write("2)");
+// let std_name1 = new Object();
+var student_name = {firstName:"Ahmed", lastName:"khan", age:46}; 
+document.write("<br>");
+document.write("3) String Array");
+document.write("<br>");
+var string_Array=["ali","ahmed","khan"];
+document.write("<br>");
+for(var i=0; i<string_Array.length; i++){
+document.write(string_Array[i]);
+document.write("<br>");
+}
+document.write("<br>");
+document.write("4)Number Array");
+document.write("<br>");
+var int_array=[1,1,3,4,4];
+for(var i=0; i<int_array.length; i++){
+document.write(int_array[i]);
+document.write("<br>");
+}
+document.write("<br>");
+document.write("5)  Boolean Array");
+document.write("<br>");
+var bool_array=["true","false",true,false];
+for(var i=0; i<bool_array.length; i++){
+document.write(bool_array[i]);
+document.write("<br>");
+}
+document.write("<br>");
+document.write("6)  Mixed Array");
+document.write("<br>");
+// var mixed_array={"ALI":"KHAN",age:23};
+var mixed_array=["ali","567",true,34];
+for(var i=0; i<mixed_array.length; i++){
+document.write(mixed_array[i]);
+document.write("<br>");
+}
+
+document.write("<br>");
+document.write("7)  Listed Array");
+document.write("<br>");
+// var mixed_array={"ALI":"KHAN",age:23};
+var listed_array=["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil", "PhD"];
+document.write("QUALIFICATION");
+document.write("<br>");
+for(var i=1; i<listed_array.length; i++){
+    document.write(i+")");
+document.write(listed_array[i]);
+document.write("<br>");
+}
+document.write("<br>");
+document.write("8)");
+var name_of_std=["ali","ahmed","khan"];
+var marks=[300,400,450];
+var t_marks=500;
+for(var i=0; i<name_of_std.length; i++){
+document.write("Score Of "+name_of_std[i]+" is "+marks[i]+".Percentage:"+marks[i]/t_marks*100);
+document.write("<br>");
+}
+document.write("<br>");
+document.write("9)a:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+var user_color=prompt(" what color you wants to add to the beginning");
+// color.shift();
+color.unshift(user_color);
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+
+}
+document.write("<br> color added <br>");
+document.write("9)b:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+var user_color_end=prompt(" what color you wants to add to the end");
+
+color.push(user_color_end);
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+}
+
+document.write("<br> color added in the end<br>");
+
+document.write("9)c:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+color.unshift("purple","orange");
+
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+
+}
+document.write("<br> two Color added <br>");
+document.write("9)d:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+color.shift();
+
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+
+}
+document.write("<br> remove one color<br>");
+document.write("9)e:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+color.pop();
+
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+
+}
+document.write("<br> remove from end <br>");
+document.write("9)f:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+var ask_user=prompt("which index You want to change 0-3");
+var ask_user_color=prompt("which color you want to replace?");
+color.splice(ask_user, 1,ask_user_color);
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+}
+document.write("<br> Has Been Removed and Added Your Color..!<br>");
+document.write("9)g:");
+document.write("<br>");
+var color=["red","green","yellow","black",];
+var ask_user=prompt("which index You want to change 0-3");
+var ask_user_color_remove=prompt("How many color you want to delete?");
+color.splice(ask_user,ask_user_color_remove);
+for(var i=0; i<color.length; i++){
+    document.write(" "+color[i]);
+}
+document.write("<br> Has Been Removed Your Color..!<br>");
+document.write("10):");
+document.write("<br>");
+
+var array_sort=["320","230","480","120"];
+// alert(array_sort.sort());
+document.write("Scores OF Students");
+for(var i=0; i<array_sort.length; i++){
+    document.write(array_sort[i]+",");
+}
+document.write("<br>");
+document.write( "Ordered Scores OF Students:"+array_sort.sort());
+document.write("<br>");
+document.write("11)");
+document.write("<br>");
+
+var city_names=["Karachi","Lahore","Islambad","Quetta","peshawar"]
+var selected_City=city_names.slice(2,4);
+document.write(selected_City);
+document.write("<br>");
+document.write("12)");
+document.write("<br>");
+var arr = ["This","is","my","cat"];
+
+document.write("<h3>ARRAY:</h3>");
+document.write("<br>");
+document.write(arr);
+
+document.write("<br>");
+document.write("<h3>STRING:</h3>");
+
+document.write(arr.join(" "));
+document.write("<br>");
+document.write("13) (FIFO-First In First Out) ");
+document.write("<br>");
+document.write("<h3>Devices:</h3>");
+
+var fifo=['keyboard','Mouse','Printer',"Monitor"];
+// fifo.push("d");
+// fifo.unshift("x");
+// document.write(fifo);
+document.write("<br>");
+fifo.shift();
+document.write("OUT Keyboard:");
+document.write("<br>");
+document.write(fifo);
+document.write("<br>");
+fifo.shift();
+document.write("OUT Mouse:");
+document.write("<br>");
+document.write(fifo);
+document.write("<br>");
+fifo.shift();
+document.write("OUT Printer:");
+document.write("<br>");
+document.write(fifo);
+document.write("<br>");
+fifo.shift();
+document.write("OUT Monitor:");
+document.write("<br>");
+document.write(fifo);
+document.write("<br>");
+document.write("14) (Last InFirst Out)    ");
+document.write("<br>");
+var lifo=['keyboard','Mouse','Printer',"Monitor"];
+
+lifo.pop();
+document.write("OUT Monitor:");
+document.write("<br>");
+document.write(lifo);
+document.write("<br>");
+lifo.pop();
+document.write("OUT Printer:");
+document.write("<br>");
+document.write(lifo);
+document.write("<br>");
+lifo.pop();
+document.write("OUT Mouse:");
+document.write("<br>");
+document.write(lifo);
+document.write("<br>");
+lifo.pop();
+document.write("OUT Keyboard:");
+document.write("<br>");
+document.write(lifo);
+document.write("<br>");
+document.write("15)");
+document.write("<br>");
+var phone=["Apple"," Samsung", "Motorola", "Nokia","Sony","Haier"];
+document.write("<select>");
+for(var i=0; i<phone.length; i++){
+    document.write("<option>"+phone[i]+"</Option>");
+}
+document.write("</select>");
+
+
+
+</script>
+    
+  </body>
+</html>
